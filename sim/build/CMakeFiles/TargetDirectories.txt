@@ -1,0 +1,4 @@
+/home/sharodroy/sim/build/CMakeFiles/rebuild_cache.dir
+/home/sharodroy/sim/build/CMakeFiles/Simulation.dir
+/home/sharodroy/sim/build/CMakeFiles/edit_cache.dir
+/home/sharodroy/sim/build/CMakeFiles/sim.dir
