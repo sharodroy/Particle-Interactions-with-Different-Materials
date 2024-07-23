@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sharodroy/sim/detector.cc" "/home/sharodroy/sim/build/CMakeFiles/sim.dir/detector.cc.o"
   "/home/sharodroy/sim/generator.cc" "/home/sharodroy/sim/build/CMakeFiles/sim.dir/generator.cc.o"
   "/home/sharodroy/sim/physics.cc" "/home/sharodroy/sim/build/CMakeFiles/sim.dir/physics.cc.o"
-  "/home/sharodroy/sim/run.cc" "/home/sharodroy/sim/build/CMakeFiles/sim.dir/run.cc.o"
   "/home/sharodroy/sim/sim.cc" "/home/sharodroy/sim/build/CMakeFiles/sim.dir/sim.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
