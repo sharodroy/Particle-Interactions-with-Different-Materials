@@ -45,8 +45,8 @@ $ cd software/
 
 ```
 Things to configure:
- CMAKE_INSTALL_PREFIX             /home/ (username of the computer) /software/geant4/geant4-v10.7.2-install
- Turn ON:GEANT4_INSTALL_DATA
+CMAKE_INSTALL_PREFIX             /home/ (username of the computer) /software/geant4/geant4-v10.7.2-install
+Turn ON:GEANT4_INSTALL_DATA
 GEANT4_USE_QT
 GEANT4_USE_RAYTRACER_X11
 GEANT4_USE_SYSTEM_EXPAT (should be ON by default)
