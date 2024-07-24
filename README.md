@@ -1,3 +1,5 @@
+---
+
 # Geant4 Simulation Installation Guide
 
 ## Steps to Install Geant4 (No Multithreading):
@@ -6,41 +8,48 @@
 - Go to the Geant4 download website: [Geant4 Download](https://geant4.web.cern.ch/download/10.7.2.html) and save the file in the `Downloads` directory.
 
 ### 2. Create Software Directory
+`(Home directory)$`
 ```bash
-$ mkdir ~/software
-$ cd ~/software/
+mkdir ~/software
+cd ~/software/
 ```
 
 ### 3. Create Geant4 Directory
+`~/software$`
 ```bash
-$ mkdir ~/software/geant4
-$ cd ~/software/geant4
+mkdir geant4
+cd geant4
 ```
 
 ### 4. Extract Geant4 Tar File
+`~/software/geant4$`
 ```bash
-~/software/geant4$ tar xzfv ~/Downloads/geant4-v10.7.2.tar.gz
+tar xzfv ~/Downloads/geant4-v10.7.2.tar.gz
 ```
 
 ### 5. Navigate to Geant4 Directory
+`~/software/geant4$`
 ```bash
-~/software/geant4$ cd geant4-v10.7.2/
+cd geant4-v10.7.2/
 ```
 
 ### 6. Install Necessary Packages
+`~/software/geant4/geant4-v10.7.2$`
 ```bash
-~/software/geant4/geant4-v10.7.2$ sudo apt install cmake cmake-curses-gui gcc g++ libexpat1-dev qt5-default libxmu-dev libmotif-dev
+sudo apt install cmake cmake-curses-gui gcc g++ libexpat1-dev qt5-default libxmu-dev libmotif-dev
 ```
 
 ### 7. Create Build Directory
+`~/software/geant4/geant4-v10.7.2$`
 ```bash
-~/software/geant4/geant4-v10.7.2$ mkdir build
-~/software/geant4/geant4-v10.7.2$ cd build
+mkdir build
+cd build
 ```
 
 ### 8. Configure CMake
+`~/software/geant4/geant4-v10.7.2/build$`
 ```bash
-~/software/geant4/geant4-v10.7.2/build$ ccmake ..
+ccmake ..
 ```
 **Things to configure:**
 - `CMAKE_INSTALL_PREFIX` : `/home/(username)/software/geant4/geant4-v10.7.2-install`
@@ -51,44 +60,51 @@ $ cd ~/software/geant4
   - `GEANT4_USE_SYSTEM_EXPAT` (should be ON by default)
 
 ### 9. Compile the Program
+`~/software/geant4/geant4-v10.7.2/build$`
 ```bash
-~/software/geant4/geant4-v10.7.2/build$ make -j<number_of_cores>
+make -j<number_of_cores>
 ```
 (Replace `<number_of_cores>` with the number of cores on your computer, e.g., `make -j10`)
 
 ### 10. Install the Program
+`~/software/geant4/geant4-v10.7.2/build$`
 ```bash
-~/software/geant4/geant4-v10.7.2/build$ make install
+make install
 ```
 
 ### 11. Source the Geant4 Environment
+`(Home directory)$`
 ```bash
-$ cd
-$ . ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
+cd
+. ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
 ```
 
 ## Test if Geant4 is Working
 
 ### 1. Navigate to B1 Example Directory
+`(Home directory)$`
 ```bash
-$ cd ~/software/geant4/geant4-v10.7.2/examples/basic/B1
+cd ~/software/geant4/geant4-v10.7.2/examples/basic/B1
 ```
 
 ### 2. Create Build Directory
+`~/software/geant4/geant4-v10.7.2/examples/basic/B1$`
 ```bash
-~/software/geant4/geant4-v10.7.2/examples/basic/B1$ mkdir build
-~/software/geant4/geant4-v10.7.2/examples/basic/B1$ cd build
+mkdir build
+cd build
 ```
 
 ### 3. Compile the Example
+`~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$`
 ```bash
-~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$ cmake ..
-~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$ make
+cmake ..
+make
 ```
 
 ### 4. Run the Simulation
+`~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$`
 ```bash
-~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$ ./exampleB1
+./exampleB1
 ```
 - When the simulation window pops up, press the green play button to run the simulation.
 
