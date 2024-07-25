@@ -116,13 +116,13 @@ Your program should be working great. YAY!
 ### 1. Clone the Repository
 `(Home directory)$`
 ```bash
-git clone https://github.com/sharodroy/geant4sim.git
+git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Materials.git
 ```
 
 ### 2. Move the Simulation Folder
 `(Home directory)$`
 ```bash
-mv ~/geant4sim/sim ~/
+mv ~/Particle-Interactions-with-Different-Materials/sim ~/
 ```
 
 ### 3. Compile the Simulation
