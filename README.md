@@ -111,4 +111,31 @@ make
 
 Your program should be working great. YAY!
 
+## Run Your Simulation
+
+### 1. Clone the Repository
+`(Home directory)$`
+```bash
+git clone https://github.com/sharodroy/geant4sim.git
+```
+
+### 2. Move the Simulation Folder
+`(Home directory)$`
+```bash
+mv ~/geant4sim/sim ~/
+```
+
+### 3. Compile the Simulation
+`~/sim/build$`
+```bash
+cmake ..
+make
+```
+
+### 4. Run the Simulation
+`~/sim/build$`
+```bash
+./sim
+```
+
 ---
