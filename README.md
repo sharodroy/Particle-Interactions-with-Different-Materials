@@ -119,21 +119,21 @@ Your program should be working great. YAY!
 git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Materials.git
 ```
 
-### 2. Move the Simulation Folder
+### 2. Navigate to my Simulation Directory
 `(Home directory)$`
 ```bash
-mv ~/Particle-Interactions-with-Different-Materials/sim ~/
+cd ~/Particle-Interactions-with-Different-Materials/build
 ```
 
 ### 3. Compile the Simulation
-`~/sim/build$`
+`~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 cmake ..
 make
 ```
 
 ### 4. Run the Simulation
-`~/sim/build$`
+`~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 ./sim
 ```
