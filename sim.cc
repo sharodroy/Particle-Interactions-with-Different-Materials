@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 #include "G4RunManager.hh"
@@ -9,6 +10,7 @@
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
+#include "generator.hh"  // Include the generator header
 
 int main(int argc, char** argv)
 {
@@ -17,6 +19,8 @@ int main(int argc, char** argv)
     runManager->SetUserInitialization(new MyDetectorConstruction());
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
+
+    runManager->SetUserAction(new MyPrimaryGenerator());  // Use the primary generator
 
     runManager->Initialize();
 
@@ -43,6 +47,9 @@ int main(int argc, char** argv)
         G4String fileName = argv[1];
         UImanager->ApplyCommand(command+fileName);
     }
+
+    delete visManager;
+    delete runManager;
 
     return 0;
 }
