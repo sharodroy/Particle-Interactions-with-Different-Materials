@@ -122,17 +122,24 @@ git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Mate
 ### 2. Navigate to my Simulation Directory
 `(Home directory)$`
 ```bash
-cd ~/Particle-Interactions-with-Different-Materials/build
+cd ~/Particle-Interactions-with-Different-Materials
 ```
 
-### 3. Compile the Simulation
+### 3. Create Build Directory
+`~/Particle-Interactions-with-Different-Materials$`
+```bash
+mkdir build
+cd build
+```
+
+### 4. Compile the Simulation
 `~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 cmake ..
 make
 ```
 
-### 4. Run the Simulation
+### 5. Run the Simulation
 `~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 ./sim
