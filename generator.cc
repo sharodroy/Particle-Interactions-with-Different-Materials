@@ -12,12 +12,12 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 
     G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
     G4String particleName;
-    G4ParticleDefinition* particle = particleTable->FindParticle(particleName="gamma");
+    G4ParticleDefinition* particle = particleTable->FindParticle(particleName="mu+");
 
     fParticleGun->SetParticleDefinition(particle);
-    fParticleGun->SetParticleEnergy(1.0*MeV);
-    fParticleGun->SetParticlePosition(G4ThreeVector(0., 0., -0.5*1.2*m)); // Position at -0.6 m along z-axis
-    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.)); // Shoot particles towards +z direction
+    fParticleGun->SetParticleEnergy(100000.0*MeV);
+    fParticleGun->SetParticlePosition(G4ThreeVector(0., 0., -0.5*m));
+    fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 }
 
 MyPrimaryGenerator::~MyPrimaryGenerator()
