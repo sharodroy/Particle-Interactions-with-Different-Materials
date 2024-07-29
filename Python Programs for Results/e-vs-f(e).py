@@ -2,10 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 file_path = '/home/sharodroy/Downloads/Results/Al/μ+/combined_output.csv'
-data = pd.read_csv(file_path)
 
 ## Al, Au, Fe, Plastic, U
 ## e−, p, μ+, μ−
+
+data = pd.read_csv(file_path)
 
 data.columns = data.columns.str.strip()
 

@@ -3,30 +3,9 @@ import matplotlib.pyplot as plt
 
 file_path = '/home/sharodroy/Downloads/Results/U/μ−/100000MeV/output.csv'
 
-# /Al/e−/
-# /Al/p/
-# /Al/μ+/
-# /Al/μ−/
-
-# /Au/e−/
-# /Au/p/
-# /Au/μ+/
-# /Au/μ−/
-
-# /Fe/e−/
-# /Fe/p/
-# /Fe/μ+/
-# /Fe/μ−/
-
-# /Plastic/e−/
-# /Plastic/p/
-# /Plastic/μ+/
-# /Plastic/μ−/
-
-# /U/e−/
-# /U/p/
-# /U/μ+/
-# /U/μ−/
+## Al, Au, Fe, Plastic, U
+## e−, p, μ+, μ−
+## 100MeV, 10000MeV, 100000MeV
 
 data = pd.read_csv(file_path)
 
