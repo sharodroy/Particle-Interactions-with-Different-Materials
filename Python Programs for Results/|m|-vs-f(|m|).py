@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 
 file_path = '/home/sharodroy/Downloads/Results/U/μ+/100MeV/output.csv'
 
+## Al, Au, Fe, Plastic, U
+## e−, p, μ+, μ−
+## 100MeV, 10000MeV, 100000MeV
+
 data = pd.read_csv(file_path)
 
 data.columns = data.columns.str.strip()
