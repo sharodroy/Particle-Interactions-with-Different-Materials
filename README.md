@@ -11,8 +11,8 @@
 ### 2. Create Software Directory
 `(Home directory)$`
 ```bash
-mkdir ~/software
-cd ~/software/
+mkdir software
+cd software
 ```
 
 ### 3. Create Geant4 Directory
@@ -31,7 +31,7 @@ tar xzfv ~/Downloads/geant4-v10.7.2.tar.gz
 ### 5. Navigate to Geant4 Directory
 `~/software/geant4$`
 ```bash
-cd geant4-v10.7.2/
+cd geant4-v10.7.2
 ```
 
 ### 6. Install Necessary Packages
@@ -79,13 +79,13 @@ make install
 `(Home directory)$`
 ```bash
 cd
-. ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
+. software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh 
 ```
 
 ### 2. Navigate to B1 Example Directory
 `(Home directory)$`
 ```bash
-cd ~/software/geant4/geant4-v10.7.2/examples/basic/B1
+cd software/geant4/geant4-v10.7.2/examples/basic/B1
 ```
 
 ### 3. Create Build Directory
@@ -117,7 +117,7 @@ Your program should be working great. YAY!
 `(Home directory)$`
 ```bash
 cd
-. ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
+. software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh 
 ```
 
 ### 2. Clone the Repository
@@ -129,7 +129,7 @@ git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Mate
 ### 3. Navigate to my Simulation Directory
 `(Home directory)$`
 ```bash
-cd ~/Particle-Interactions-with-Different-Materials
+cd Particle-Interactions-with-Different-Materials
 ```
 
 ### 4. Create Build Directory and Configure the Build
