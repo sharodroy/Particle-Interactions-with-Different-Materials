@@ -73,36 +73,36 @@ make -j<number_of_cores>
 make install
 ```
 
-### 11. Source the Geant4 Environment
+## Test if Geant4 is Working
+
+### 1. Source the Geant4 Environment
 `(Home directory)$`
 ```bash
 cd
 . ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
 ```
 
-## Test if Geant4 is Working
-
-### 1. Navigate to B1 Example Directory
+### 2. Navigate to B1 Example Directory
 `(Home directory)$`
 ```bash
 cd ~/software/geant4/geant4-v10.7.2/examples/basic/B1
 ```
 
-### 2. Create Build Directory
+### 3. Create Build Directory
 `~/software/geant4/geant4-v10.7.2/examples/basic/B1$`
 ```bash
 mkdir build
 cd build
 ```
 
-### 3. Compile the Example
+### 4. Compile the Example
 `~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$`
 ```bash
 cmake ..
 make
 ```
 
-### 4. Run the Simulation
+### 5. Run the Simulation
 `~/software/geant4/geant4-v10.7.2/examples/basic/B1/build$`
 ```bash
 ./exampleB1
@@ -113,19 +113,26 @@ Your program should be working great. YAY!
 
 ## Run Your Simulation
 
-### 1. Clone the Repository
+### 1. Source the Geant4 Environment
+`(Home directory)$`
+```bash
+cd
+. ~/software/geant4/geant4-v10.7.2-install/share/Geant4-10.7.2/geant4make/geant4make.sh
+```
+
+### 2. Clone the Repository
 `(Home directory)$`
 ```bash
 git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Materials.git
 ```
 
-### 2. Navigate to my Simulation Directory
+### 3. Navigate to my Simulation Directory
 `(Home directory)$`
 ```bash
 cd ~/Particle-Interactions-with-Different-Materials
 ```
 
-### 3. Create Build Directory and Configure the Build
+### 4. Create Build Directory and Configure the Build
 `~/Particle-Interactions-with-Different-Materials$`
 ```bash
 mkdir build
@@ -150,14 +157,14 @@ cd build
   Go to line 24. Default energy level is 100 MeV.
   Refer to the comments for energy levels used in research.
 
-### 4. Compile the Simulation
+### 5. Compile the Simulation
 `~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 cmake ..
 make
 ```
 
-### 5. Run the Simulation
+### 6. Run the Simulation
 `~/Particle-Interactions-with-Different-Materials/build$`
 ```bash
 ./sim
