@@ -6,7 +6,7 @@
 ## Steps to Install Geant4 (No Multithreading):
 
 ### 1. Download Geant4
-- Go to the Geant4 download website: [Geant4 Download](https://geant4.web.cern.ch/download/10.7.2.html) and save the file in the `Downloads` directory.
+- Go to the Geant4 download website: [Geant4 Download](https://gitlab.cern.ch/geant4/geant4/-/archive/v10.7.2/geant4-v10.7.2.tar.gz) and save the file in the `Downloads` directory.
 
 ### 2. Create Software Directory
 `(Home directory)$`
