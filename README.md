@@ -125,12 +125,30 @@ git clone https://github.com/sharodroy/Particle-Interactions-with-Different-Mate
 cd ~/Particle-Interactions-with-Different-Materials
 ```
 
-### 3. Create Build Directory
+### 3. Create Build Directory and Configure the Build
 `~/Particle-Interactions-with-Different-Materials$`
 ```bash
 mkdir build
 cd build
 ```
+
+#### How to Change Material, Element, and Energy
+
+- **Change Material:**
+  Open a text editor and view the file `construction.cc`. 
+  Go to line 67. Default material is Gold.
+  Choices: Aluminum, Uranium, Iron, Plastic, Gold.
+
+- **Change Element:**
+  Open a text editor and view the file `generator.cc`. 
+  Go to line 15. Default element is electrons.
+  Refer to the comments for particles used in research.
+  For more options, refer to [this link](https://www.hep.ph.ic.ac.uk/~yoshiu/COMET/comet_g4HTMLdoc/_gun_.html#:~:text=Parameters-,particleName,-type%20s).
+
+- **Change Energy:**
+  Open a text editor and view the file `generator.cc`. 
+  Go to line 24. Default energy level is 100 MeV.
+  Refer to the comments for energy levels used in research.
 
 ### 4. Compile the Simulation
 `~/Particle-Interactions-with-Different-Materials/build$`

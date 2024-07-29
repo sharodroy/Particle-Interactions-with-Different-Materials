@@ -21,7 +21,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     // Negatively Charged Muons: mu-
 
     fParticleGun->SetParticleDefinition(particle);
-    fParticleGun->SetParticleEnergy(100000.0*MeV);
+    fParticleGun->SetParticleEnergy(100.0*MeV);
     // Define amount of Energy you want to shoot your particle at.
     // I used 100, 10000, and 100000 MeV for my data visualizations.
     fParticleGun->SetParticlePosition(G4ThreeVector(0., 0., -0.5*m));
