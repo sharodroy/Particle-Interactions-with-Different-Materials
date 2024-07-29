@@ -12,7 +12,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 
     G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
     G4String particleName;
-    G4ParticleDefinition* particle = particleTable->FindParticle(particleName="mu+");
+    G4ParticleDefinition* particle = particleTable->FindParticle(particleName="e-");
 
     fParticleGun->SetParticleDefinition(particle);
     fParticleGun->SetParticleEnergy(100000.0*MeV);

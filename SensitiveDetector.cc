@@ -11,7 +11,7 @@ SensitiveDetector::SensitiveDetector(const G4String& name) : G4VSensitiveDetecto
 {
     std::ofstream outfile;
     outfile.open("output.csv", std::ios::out);
-    outfile << "EventID,ParticleName,PositionX,PositionY,PositionZ,Energy,MomentumX,MomentumY,MomentumZ,|Momentum|" << std::endl;
+    outfile << "EventID, ParticleName, PositionX, PositionY, PositionZ, Radius, Energy, MomentumX, MomentumY, MomentumZ, |Momentum|" << std::endl;
     outfile.close();
 }
 
@@ -37,11 +37,12 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* /*hist*/
             << position.x() << ","
             << position.y() << ","
             << position.z() << ","
+            << sqrt(pow(position.x(), 2) + pow(position.y(), 2)) << ","
             << energy << ","
             << momentum.x() << ","
             << momentum.y() << ","
             << momentum.z() << ","
-            << sqrt(pow(momentum.x(), 2) + pow(momentum.y(), 2) + pow(momentum.z(), 2)) << std::endl;
+            << sqrt(pow(momentum.x(), 2) + pow(momentum.y(), 2)) << std::endl;
     outfile.close();
 
     return true;

@@ -22,9 +22,10 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
     // Get NIST material manager
     G4NistManager* nist = G4NistManager::Instance();
 
+    G4double energy[2] = {1.239841939*eV/0.2, 1.239841939*eV/0.9};
+
     // Define Aluminum material with refractive index
     G4Material* Aluminum = nist->FindOrBuildMaterial("G4_Al");
-    G4double energy[2] = {1.239841939*eV/0.2, 1.239841939*eV/0.9};
     G4double rindexAluminum[2] = {1.39, 1.39};
     G4MaterialPropertiesTable* mptAluminum = new G4MaterialPropertiesTable();
     mptAluminum->AddProperty("RINDEX", energy, rindexAluminum, 2);
@@ -32,24 +33,31 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 
     // Define Uranium material with refractive index
     G4Material* Uranium = nist->FindOrBuildMaterial("G4_U");
-    G4double rindexUranium[2] = {1.52, 1.52}; // Example values, please adjust to real ones
+    G4double rindexUranium[2] = {1.50, 1.50}; // Adjusted to approximate real value
     G4MaterialPropertiesTable* mptUranium = new G4MaterialPropertiesTable();
     mptUranium->AddProperty("RINDEX", energy, rindexUranium, 2);
     Uranium->SetMaterialPropertiesTable(mptUranium);
 
     // Define Iron material with refractive index
     G4Material* Iron = nist->FindOrBuildMaterial("G4_Fe");
-    G4double rindexIron[2] = {2.91, 2.91}; // Example values, please adjust to real ones
+    G4double rindexIron[2] = {2.91, 2.91};
     G4MaterialPropertiesTable* mptIron = new G4MaterialPropertiesTable();
     mptIron->AddProperty("RINDEX", energy, rindexIron, 2);
     Iron->SetMaterialPropertiesTable(mptIron);
 
     // Define Plastic material with refractive index
     G4Material* Plastic = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
-    G4double rindexPlastic[2] = {1.58, 1.58}; // Example values, please adjust to real ones
+    G4double rindexPlastic[2] = {1.58, 1.58};
     G4MaterialPropertiesTable* mptPlastic = new G4MaterialPropertiesTable();
     mptPlastic->AddProperty("RINDEX", energy, rindexPlastic, 2);
     Plastic->SetMaterialPropertiesTable(mptPlastic);
+
+    // Define Gold material with refractive index
+    G4Material* Gold = nist->FindOrBuildMaterial("G4_Au");
+    G4double rindexGold[2] = {0.47, 0.47}; // Real part only, Geant4 cannot handle imaginary part directly
+    G4MaterialPropertiesTable* mptGold = new G4MaterialPropertiesTable();
+    mptGold->AddProperty("RINDEX", energy, rindexGold, 2);
+    Gold->SetMaterialPropertiesTable(mptGold);
 
     // Define World material
     G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
