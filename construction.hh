@@ -1,8 +1,8 @@
 #ifndef CONSTRUCTION_HH
 #define CONSTRUCTION_HH
 
-#include <G4VUserDetectorConstruction.hh>
-#include <G4LogicalVolume.hh>
+#include "G4VUserDetectorConstruction.hh"
+#include "G4LogicalVolume.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -17,4 +17,4 @@ private:
     G4LogicalVolume* logicDetector;
 };
 
-#endif // CONSTRUCTION_HH
+#endif

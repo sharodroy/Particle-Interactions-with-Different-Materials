@@ -10,7 +10,7 @@
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
-#include "generator.hh"  // Include the generator header
+#include "generator.hh"
 
 int main(int argc, char** argv)
 {
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
 
-    runManager->SetUserAction(new MyPrimaryGenerator());  // Use the primary generator
+    runManager->SetUserAction(new MyPrimaryGenerator());
 
     runManager->Initialize();
 

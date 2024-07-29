@@ -1,5 +1,5 @@
-#ifndef SENSITIVEDETECTOR_HH
-#define SENSITIVEDETECTOR_HH
+#ifndef DATAOUTPUT_HH
+#define DATAOUTPUT_HH
 
 #include "G4VSensitiveDetector.hh"
 #include "G4RunManager.hh"
@@ -16,4 +16,4 @@ public:
     virtual void EndOfEvent(G4HCofThisEvent* hce) override;
 };
 
-#endif // SENSITIVEDETECTOR_HH
+#endif

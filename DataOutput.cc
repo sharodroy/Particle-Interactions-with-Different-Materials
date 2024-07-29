@@ -1,5 +1,5 @@
 #include <iostream>
-#include "SensitiveDetector.hh"
+#include "DataOutput.hh"
 #include "G4Step.hh"
 #include "G4Track.hh"
 #include "G4TouchableHistory.hh"

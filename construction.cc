@@ -1,25 +1,20 @@
 #include "construction.hh"
-#include "SensitiveDetector.hh"
+#include "DataOutput.hh"
 
-// Include necessary Geant4 headers
 #include "G4NistManager.hh"
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 
-// Constructor
 MyDetectorConstruction::MyDetectorConstruction()
 {}
 
-// Destructor
 MyDetectorConstruction::~MyDetectorConstruction()
 {}
 
-// Construct method
 G4VPhysicalVolume* MyDetectorConstruction::Construct()
 {
-    // Get NIST material manager
     G4NistManager* nist = G4NistManager::Instance();
 
     G4double energy[2] = {1.239841939*eV/0.2, 1.239841939*eV/0.9};
@@ -69,7 +64,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 
     // Define Slab volume
     G4Box* solidSlab = new G4Box("Slab", 0.4*m, 0.4*m, 0.01*m);
-    G4LogicalVolume* logicSlab = new G4LogicalVolume(solidSlab, Uranium, "Slab");
+    G4LogicalVolume* logicSlab = new G4LogicalVolume(solidSlab, Gold, /*This is where you define what material you want to use. Above I have defined Aluminum, Uranium, Iron, Plastic, and Gold.*/ "Slab");
     new G4PVPlacement(0, G4ThreeVector(0., 0., 0.25*m), logicSlab, "Slab", logicWorld, false, 0, true);
 
     // Define Detector volume
@@ -81,7 +76,6 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
     return physWorld;
 }
 
-// ConstructSDandField method
 void MyDetectorConstruction::ConstructSDandField()
 {
     // Create and assign a sensitive detector
