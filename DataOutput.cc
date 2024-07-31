@@ -18,10 +18,10 @@ SensitiveDetector::SensitiveDetector(const G4String& name) : G4VSensitiveDetecto
 SensitiveDetector::~SensitiveDetector()
 {}
 
-void SensitiveDetector::Initialize(G4HCofThisEvent* /*hce*/)
+void SensitiveDetector::Initialize(G4HCofThisEvent* )
 {}
 
-G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* /*hist*/)
+G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* )
 {
     G4Track* track = step->GetTrack();
     G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
@@ -37,12 +37,12 @@ G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory* /*hist*/
             << position.x() << ","
             << position.y() << ","
             << position.z() << ","
-            << sqrt(pow(position.x(), 2) + pow(position.y(), 2)) << ","
+            << sqrt(pow(position.x(), 2) + pow(position.y(), 2) + pow(position.z(), 2)) << ","
             << energy << ","
             << momentum.x() << ","
             << momentum.y() << ","
             << momentum.z() << ","
-            << sqrt(pow(momentum.x(), 2) + pow(momentum.y(), 2)) << std::endl;
+            << sqrt(pow(momentum.x(), 2) + pow(momentum.y(), 2) + pow(momentum.z(), 2)) << std::endl;
     outfile.close();
 
     return true;
