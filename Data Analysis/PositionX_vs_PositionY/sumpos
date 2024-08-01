@@ -1,0 +1,38 @@
+**Summary of Findings:**
+
+1. **Electrons:**
+   - **Energy Levels:**
+     - 1,000 MeV: Electrons are tightly clustered within ±2 units.
+     - 10,000 MeV: Spread increases to ±4 units.
+     - 100,000 MeV: Dispersion broadens to ±5 units.
+   - **Materials:**
+     - Metals (Aluminum, Gold, Iron): High central densities at all energy levels.
+     - Plastic: Less spread at lower energies but similar to metals at higher energies.
+     - Uranium: Different scatter patterns compared to other materials.
+
+2. **Positively Charged Muons:**
+   - **Energy Levels:**
+     - Spread increases with rising energy levels.
+   - **Materials:**
+     - Aluminum: ±2 units at 1,000 MeV, expanding to ±4 units at 100,000 MeV.
+     - Gold and Uranium: Smaller spread at 1,000 MeV, expanding at higher energies.
+     - Plastic: Spread increases from ±2 units at 1,000 MeV to ±4 units at 100,000 MeV.
+
+3. **Negatively Charged Muons:**
+   - **Energy Levels:**
+     - Spread increases with energy, indicating deeper penetration and more extensive scattering.
+   - **Materials:**
+     - Aluminum: Spread from ±3 to ±5 units as energy increases.
+     - Gold: Tighter spread due to density, expanding with energy.
+     - Iron: Similar trends as Aluminum and Gold.
+     - Plastic: Wider spread at lower energies, increasing with energy.
+     - Uranium: Smallest spread at low energy levels, increasing with energy.
+
+4. **Protons:**
+   - **Energy Levels:**
+     - Spread increases with higher energy levels across all materials.
+   - **Materials:**
+     - Aluminum: Spread from ±2 to ±5 units.
+     - Gold and Uranium: Tighter clusters due to higher stopping power, expanding at higher energies.
+     - Iron: Uniform distribution, spread increasing with energy.
+     - Plastic: Broadest spread, indicating less resistance to proton penetration.

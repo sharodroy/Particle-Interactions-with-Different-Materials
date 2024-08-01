@@ -1,0 +1,26 @@
+### Summary of Findings
+
+**Electron Interactions:**
+- All materials (Aluminum, Gold, Iron, Plastic, Uranium) show a consistent peak in particle count at a radius of 500 units.
+- Particle counts increase with energy levels (1,000 MeV, 10,000 MeV, 100,000 MeV).
+- Aluminum: Peaks at 35,000 (1,000 MeV), 40,000 (10,000 MeV), remains significant at 100,000 MeV.
+- Gold, Iron, Plastic: Peaks around 6,000 (1,000 MeV), increasing to 35,000-40,000 at higher energies.
+- Uranium: Peaks at 6,000 (1,000 MeV), 35,000 (10,000 MeV), 350,000 (100,000 MeV).
+
+**Positively Charged Muon Interactions:**
+- Consistent peak at a radius of 500 units across all materials.
+- Particle counts at 1,000 MeV: Aluminum (~10,000), Gold/Iron (~1,000), Uranium (~1,400), Plastic (~700).
+- Heavier materials (Gold, Iron, Uranium) show broader distributions, reflecting higher interaction rates.
+- Patterns remain consistent across different energy levels, indicating material properties govern interactions.
+
+**Negatively Charged Muon Interactions:**
+- Consistent peak at a radius of 500 units across all materials and energy levels.
+- Particle counts at 1,000 MeV: Aluminum (~10,000), Gold (~2,000), Iron/Plastic/Uranium (1,000-10,000).
+- Low particle counts (below 500) in the 480-497.5 radius range.
+- Indicates a boundary effect with a common interaction mechanism at the 500 radius mark.
+
+**Proton Interactions:**
+- Consistent peak in particle counts at a radius of 500 units for Aluminum and Gold.
+- Aluminum: Peak count of ~10,000 at 1,000 MeV, increasing with energy.
+- Gold: Peak count of ~3,500 at 1,000 MeV, increasing at higher energies.
+- Suggests significant edge effects or boundary scattering with higher energies increasing interactions without altering distribution patterns.

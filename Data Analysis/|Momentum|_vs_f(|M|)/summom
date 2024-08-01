@@ -1,0 +1,27 @@
+### Summary of Findings
+
+#### Electrons
+- **Momentum Frequency Patterns**: 
+  - Consistent across materials at different energy levels (1,000 MeV, 10,000 MeV, 100,000 MeV).
+  - Peak frequencies for low momentum values indicate significant scattering and energy loss.
+  - Secondary peaks at maximum momentum values, becoming more pronounced at higher energies, suggesting some electrons retain initial momentum.
+
+#### Positively Charged Muons
+- **Momentum Retention**:
+  - Predominantly retain initial momentum across different materials and energy levels.
+  - Minimal change in frequency spread, with sharper peaks in metals compared to broader distribution in Plastic.
+  - Demonstrates robustness for experimental and material science applications.
+
+#### Negatively Charged Muons (\(\mu^-\))
+- **Interaction Patterns**:
+  - Two distinct peaks: one at low momentum values and another at high momentum values.
+  - Consistent pattern across different materials and energy levels.
+  - Indicates similar interaction mechanisms with rapid energy loss and energy retention behaviors.
+
+#### Protons
+- **Momentum Distribution**:
+  - Consistent frequency distributions showing two main peaks: near zero and at maximum momentum.
+  - Higher energy levels result in broader momentum distribution and increased high momentum frequencies.
+  - Reflects material properties' influence on interaction dynamics, with lower frequencies in Plastic indicating different characteristics due to its lower atomic number.
+
+Overall, the findings highlight consistent interaction patterns across different materials and energy levels, with variations primarily influenced by material properties. This indicates universal interaction mechanisms with specific material-dependent effects on scattering and momentum retention.
